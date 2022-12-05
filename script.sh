@@ -7,6 +7,10 @@ cp ./config_files/ssh/sshd_config /etc/ssh/sshd_config
 
 cp ./config_files/ssh/Banner /etc/Banner
 
+useradd -m nessim 
+echo "nessim  ALL=(ALL:ALL) ALL" >> /etc/sudoers
+
+
 
 # Redemarrer le service sshd 
 
